@@ -86,9 +86,16 @@ namespace A4
                 RotationPeriod = value;
             }
         }
-
+        //CONSTRUCTOR
+        Planet(string name,double diameter,double mass)
+        {
+            name = _name;
+            diameter = _diameter;
+            mass = _mass;
         }
+
     }
+}
     
 
 
