@@ -11,6 +11,8 @@ namespace A4
 {
     public class GiantPlanet
     {
-        
+        //PRIVATE INSTANCE VARIABLE
+        private string _type;
+
     }
 }
