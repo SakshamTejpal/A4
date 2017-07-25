@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /* Name-Saksham Tejpal
  * Date-7/24/17
  * Description-This is Planet abstract class
- * Version 0.1-Created Planet class
+ * Version 0.4-Completed Planet class
  */
 namespace A4
 {
@@ -92,6 +92,11 @@ namespace A4
             name = _name;
             diameter = _diameter;
             mass = _mass;
+        }
+        //TO STRING
+        public override string ToString()
+        {
+            return string.Format("{0} {1} {2}", _name, _diameter, _mass);
         }
 
     }
