@@ -10,7 +10,7 @@ using System.Threading.Tasks;
  */
 namespace A4
 {
-    abstract class  Planet
+   public abstract class  Planet
     {
         //PRIVATE INSTANCE MEMBERS
         private double _diameter;
@@ -87,7 +87,7 @@ namespace A4
             }
         }
         //CONSTRUCTOR
-        Planet(string name,double diameter,double mass)
+        public Planet(string name,double diameter,double mass)
         {
             name = _name;
             diameter = _diameter;
