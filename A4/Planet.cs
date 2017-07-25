@@ -10,7 +10,7 @@ using System.Threading.Tasks;
  */
 namespace A4
 {
-    class Planet
+    abstract class  Planet
     {
         //PRIVATE INSTANCE MEMBERS
         private double _diameter;
