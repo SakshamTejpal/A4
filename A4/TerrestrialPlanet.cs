@@ -11,5 +11,7 @@ namespace A4
 {
     public class TerrestrialPlanet
     {
+        //PRIVATE INSTANCE VARIABLES
+        private bool _oxygen;
     }
 }
