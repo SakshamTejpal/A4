@@ -5,11 +5,11 @@ using System.Text;
 /* Name-Saksham Tejpal
  * Date-7/24/17
  * Description-This is GiantPlanet class
- * Version 0.2-Created Constructor for GiantPlanet class
+ * Version 0.3-Created Meathods for GiantPlanet class
  */
 namespace A4
 {
-    public class GiantPlanet : Planet
+    public class GiantPlanet : Planet,IHasMoon
     {
         //PRIVATE INSTANCE VARIABLE
         private string _type;
@@ -19,5 +19,22 @@ namespace A4
         {
             type = _type;
         }
+        //METHODS
+        public bool HasMoons()
+        {
+            bool value;
+            value =(MoonCount > 0) ? true : false;
+
+            return value;
+        }
+        public bool HasRings()
+        {
+            bool value;
+            value = (RingCount > 0) ? true : false;
+
+            return value;
+        }
+
+
     }
 }
