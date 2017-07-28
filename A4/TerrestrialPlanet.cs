@@ -9,12 +9,12 @@ using System.Text;
  */
 namespace A4
 {
-    public class TerrestrialPlanet : Planet 
+    public class TerrestrialPlanet : Planet,IHasMoon,IHabitable 
     {
         //PRIVATE INSTANCE VARIABLES
         private bool _oxygen;
         //CONSTRUCTOR
-        TerrestrialPlanet(string name, double diameter, double mass, bool oxygen)
+        public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen)
            : base(name, diameter, mass)
         {
             oxygen = _oxygen;

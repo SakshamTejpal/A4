@@ -9,15 +9,15 @@ using System.Text;
  */
 namespace A4
 {
-    public class GiantPlanet : Planet,IHasMoon
+    public class GiantPlanet : Planet,IHasMoon,IHasRing
     {
         //PRIVATE INSTANCE VARIABLE
         private string _type;
         //CONSTRUCTOR
-        GiantPlanet(string name,double diameter,double mass,string type)
+        public GiantPlanet(string name,double diameter,double mass,string type)
             : base (name,diameter,mass)
         {
-            type = _type;
+            _type = type;
         }
         //METHODS
         public bool HasMoons()
@@ -27,8 +27,12 @@ namespace A4
 
             return value;
         }
-        public bool HasRings()
+
+       
+
+        public bool HasRing()
         {
+
             bool value;
             value = (RingCount > 0) ? true : false;
 
