@@ -11,6 +11,6 @@ namespace A4
 {
     public interface IHasMoon
     {
-        public bool HasMoons();
+         bool HasMoons();
     }
 }
